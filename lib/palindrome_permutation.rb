@@ -14,11 +14,5 @@ def palindrome_permutation?(string)
       count += 1 
     end 
   end
-
-  if string.length % 2 == 0
     return count == string_array.length/2
-  elsif string.length % 2 > 0 
-    return count == (string_array.length-1)/2
-  end
-  return false  
 end 
